@@ -95,6 +95,7 @@ $dataSQL = mysqli_fetch_array($execStrSQL);
             <div class="social-links">
               <a href="<?= $dataSQL["twitter"] ?>" class="twitter"><i class="bi bi-twitter"></i></a>
               <a href="<?= $dataSQL["instagram"] ?>" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="<?= $dataSQL["github"] ?>" class="github"><i class="bi bi-github"></i></a>
             </div>
           </div>
         </div>

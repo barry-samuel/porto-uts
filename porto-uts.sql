@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `data_pribadi` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table porto-uts.data_pribadi: ~1 rows (approximately)
+-- Dumping data for table porto-uts.data_pribadi: ~0 rows (approximately)
 /*!40000 ALTER TABLE `data_pribadi` DISABLE KEYS */;
 INSERT INTO `data_pribadi` (`id`, `name`, `about_desc`, `website`, `phone`, `address`, `degree`, `email`, `freelance_s`) VALUES
 	(1, 'Barry Samuel', 'Hi there, my name is Barry Samuel and i am currently enrolled as student at Pembangunan Jaya University studying computer science. My current interest in the computer science field are <b>computer vision, artificial intelligent</b> and <b>full-stack web development</b>.', 'barry-samuel.github.io', '+123 456 7890', 'Tangerang Selatan, Indonesia', 'Bachelor (Ongoing)', 'barrysamuel[at]pm[dot]me', 'Available');
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS `resume` (
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table porto-uts.resume: ~1 rows (approximately)
+-- Dumping data for table porto-uts.resume: ~0 rows (approximately)
 /*!40000 ALTER TABLE `resume` DISABLE KEYS */;
 INSERT INTO `resume` (`id`, `summary_desc`, `edu_1`, `edu_1_dur`, `edu_1_inst`) VALUES
 	(1, 'Aspiring full-stack web developer with experience designing and developing website from initial concept to final, polished deployable website.', 'Bachelor of Computer Science', '2019 - Present', 'Pembangunan Jaya University, Tangerang Selatan, Indonesia');
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `skill` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table porto-uts.skill: ~1 rows (approximately)
+-- Dumping data for table porto-uts.skill: ~0 rows (approximately)
 /*!40000 ALTER TABLE `skill` DISABLE KEYS */;
 INSERT INTO `skill` (`id`, `c_cpp`, `python`, `php`, `java`, `html`, `css`) VALUES
 	(1, 70, 75, 40, 65, 50, 45);
@@ -93,13 +93,14 @@ CREATE TABLE IF NOT EXISTS `sosial_media` (
   `id` int(3) NOT NULL AUTO_INCREMENT,
   `twitter` varchar(256) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `instagram` varchar(256) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `github` varchar(256) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Dumping data for table porto-uts.sosial_media: ~1 rows (approximately)
 /*!40000 ALTER TABLE `sosial_media` DISABLE KEYS */;
-INSERT INTO `sosial_media` (`id`, `twitter`, `instagram`) VALUES
-	(1, 'https://twitter.com/sbarrysamuel', 'https://www.instagram.com/sbarrysamuel');
+INSERT INTO `sosial_media` (`id`, `twitter`, `instagram`, `github`) VALUES
+	(1, 'https://twitter.com/sbarrysamuel', 'https://www.instagram.com/sbarrysamuel', 'https://github.com/barry-samuel/');
 /*!40000 ALTER TABLE `sosial_media` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
