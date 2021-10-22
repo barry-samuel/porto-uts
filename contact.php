@@ -115,6 +115,10 @@ $dataSQL = mysqli_fetch_array($execStrSQL);
         </div>
       </div>
 
+      <div class="row mt-4 align-items-stretch">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126904.29821184621!2d106.63827181257064!3d-6.2953277507586085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fab10419c095%3A0x8706481c2c4aafe4!2sKota%20Tgr.%20Sel.%2C%20Kota%20Tangerang%20Selatan%2C%20Banten!5e0!3m2!1sid!2sid!4v1634886511205!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
     </div>
   </section><!-- End Contact Section -->
 
